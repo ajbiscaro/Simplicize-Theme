@@ -14,5 +14,5 @@ A simple and minimal Wordpress theme that uses theme customizer.
 
 == Changelog ==
 
-= 1.0 - August 28 2015 =
+= 1.0 - September 13 2015 =
 * Initial release
