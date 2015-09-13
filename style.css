@@ -1,0 +1,382 @@
+/*
+Theme Name: Simplicize
+Description: The Simplicize theme, is a simple and minimalist theme. This features the use of theme customizer.
+Author: Ardel John S. Biscaro
+Author URI: http://ajbiscaro.github.io
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+*/
+
+@charset "UTF-8";
+
+/*** 
+Reset - taken from eric meyer with some added defaults 
+***/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+em { font-style: italic }
+strong { font-weight: bold }
+
+/*** 
+Remember to define focus styles! 
+***/
+:focus { outline: 0; }
+
+/***
+Remember to highlight inserts somehow! 
+***/
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/***
+Tables still need 'cellspacing="0"' in the markup 
+***/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*** 
+Some default classes 
+***/
+.left{ float:left; }
+.right { float:right; }
+.clear{ clear:both; }
+
+img.alignleft { float:left; margin:0 10px 10px 0; }
+img.alignright { float:right; margin:0 0 10px 10px; }
+
+.txt-center { text-align: center; }
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+
+/*** Clearfix ***/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; }
+*:first-child+html .clearfix { zoom: 1; }
+.clear { clear: both; }
+
+/*** 
+General Settings 
+***/
+body {
+	background: #ffffff;
+	color: #000000; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+h1,h2,h3,h4,h5,h6 { 
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+p { 
+	margin: 0px 0px 15px 0px; 
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300,300italic);
+
+/***
+Container
+***/
+.container {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 70.27818448023426%
+}
+
+/***
+Columns
+***/
+
+.col-3 {
+	float: left;
+	margin-right: 40px;
+	width: 300px;
+}
+
+.col-3.last {
+	margin-right: 0px;
+}
+
+/***
+Header
+***/
+#masthead .header-top {
+	padding: 50px 0;
+}
+#masthead .custom-header {
+	background-attachment: fixed;
+	background-color: #fff;
+	background-position: center top;
+    background-repeat: no-repeat;
+	background-size: 100% auto;
+	display: block;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#masthead .site-branding {
+	margin-top: 20px;
+}
+#masthead .site-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0;
+}
+#masthead .site-description {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 60px;
+	margin: 0;
+}
+#masthead .site-title a {
+	text-decoration: none;
+}
+#masthead .logo img {
+    max-height: 240px;
+}
+
+/****
+Navigation
+***/
+.main-navigation{
+	background-color: #fff;
+	border-top: 1px solid #e0d9d9;
+	border-bottom: 1px solid #e0d9d9;
+	display: block;
+	margin-bottom: 40px;
+	padding: 30px 0;
+}
+.main-navigation ul li {
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 35px;
+}
+.main-navigation ul li a {
+	color: #605c5c;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.main-navigation ul li a:hover {
+	color: #000;
+}
+.main-navigation.toggle {
+	display: none;
+}
+
+/***
+Main Content
+***/
+#primary .site-content{
+	float: left;
+	width: 60.41666666666667%;
+}
+#primary .post {
+	background-color: #fff;
+	margin-bottom: 48px;
+}
+#primary img {
+	max-width: 100%;
+}
+#primary .entry-title {
+	color: #605c5c;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 10px 0px;
+}
+#primary article a {
+	color: #605c5c;
+	text-decoration: none;
+}
+#primary article a:hover {
+	color: #000;
+}
+#primary article .post-author {
+	color: #aeaeae;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+	margin: 0;
+}
+#primary article .post-date {
+	color: #aeaeae;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+}
+#primary article p {
+	color: #959595;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+#primary article  p.readmore a { 
+	color: #959595;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;	
+}
+#primary article p.readmore a:hover {
+	text-decoration: underline;
+} 
+#primary .border {
+	border-bottom: 1px solid #e0d9d9;
+	padding-top: 10px;
+}
+
+/***
+Sidebar
+***/
+#secondary .sidebar {
+	float: right;
+	width: 31.25%;
+}
+#secondary .widget  {
+	background-color: #fff;
+	border: 1px solid #e0d9d9;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+#secondary .widget-title  {
+	color: #605c5c;
+    font-family: "Roboto",sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+#secondary .widget ul li a {
+	border-bottom: 1px solid #f6f6f6;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 30px;	
+	text-decoration: none;
+}
+#secondary .widget ul li a:hover {
+	text-decoration: underline;
+}
+
+/***
+Footer
+***/
+.site-footer {
+	background-color: #fff;
+	color: #959595;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+.site-footer a {
+	color: #959595;
+	text-decoration: none;
+}
+.site-footer a:hover {
+	text-decoration: underline;
+}
+.site-footer .widget-area {
+	padding-top: 50px;
+}
+.site-footer h3.widget-title {
+	color: #605c5c;
+    font-family: "Roboto",sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 10px 0;	
+}
+.site-footer  .widget {
+	float: left;
+	margin-right: 3.125%;
+	width: 31.25%;	
+}
+.site-footer .widget-area #text-6 {
+	margin: 0;
+	padding: 0;
+}
+.site-footer  input {
+	color: #959595;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+.site-footer  input[type="text"] {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+    border-radius: 4px;
+	padding: 6px 12px;
+}
+.site-footer  input[type="submit"] {
+	border-radius: 4px;
+	padding: 3px 6px;
+}
+.site-footer  input[type="submit"]:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.site-footer .site-info {
+	padding-top: 50px;
+}
+
+/****
+Comments
+***/
+#comments .comment-title, #comments .comment-reply-title {
+	color: #000;
+	font-family: "Roboto",sans-serif;
+	font-size: 16px;
+	font-weight:700;
+}
+#comments img.avatar  {
+    border: 1px solid #e0d9d9;
+    margin-right: 10px;
+    padding: 8px;
+	float: left;
+}
+#comments .comment-content {
+	margin-top: 40px;
+}
+#comments .comment-list a , 
+	#comments .comment-list span {
+	color: #959595;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+#comments .comment-list article {
+	border-bottom: 1px solid #e0d9d9;	
+	padding-bottom: 30px;
+    position: relative;
+}
+#respond {
+	margin-top: 30px;
+}
+#respond .comment-form {
+	color: #959595;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+#respond .comment-form input[type="text"], 
+	#respond .comment-form textarea  {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+    border-radius: 4px;
+	padding: 6px 12px;
+}
+#respond .comment-form  input[type="submit"] {
+	border-radius: 4px;
+	color: #959595;
+	padding: 3px 6px;
+}
+#respond .comment-form  input[type="submit"]:hover {
+	color: #000;
+	cursor: pointer;
+}

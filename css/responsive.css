@@ -1,0 +1,34 @@
+/*----Media Queries-----*/
+@media only screen and (max-width: 959px) {
+	#primary .site-content{
+		width: 100%;
+	}
+	#secondary .sidebar {
+		float: left;
+		width: 100%
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+	.site-footer .widget {
+		margin-right: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+	img {
+		display: none; 
+	}
+}
