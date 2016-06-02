@@ -6,6 +6,9 @@ Designed & Developed by: Ardel John S. Biscaro
 
 A simple and minimal Wordpress theme that uses theme customizer.
 
+Worpress API used:
+- Theme Customization API
+
 == Installation ==
 	
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
